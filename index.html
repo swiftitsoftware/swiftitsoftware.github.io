@@ -28,6 +28,33 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .bullet-container {
+          display: flex;
+          justify-content: space-between;
+        }
+    
+        .bullet-column {
+          flex: 1;
+          padding: 0 10px;
+        }
+    
+        .bullet-list {
+          list-style-type: none;
+          padding: 0;
+        }
+    
+        .bullet-list li {
+          position: relative;
+          margin-bottom: 10px;
+        }
+    
+        .bullet-list li:before {
+          content: "\2022";
+          position: absolute;
+          left: -15px;
+        }
+      </style>
 </head>
 
 <body>
@@ -79,9 +106,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <!-- <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
+                      <a href="index.html" class="nav-item nav-link active">Home</a>
+                      <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCex8t93PGQOcF6gXvA0n4D50YLbzQ4CxTCo4v4qpWTJP8hQ/viewform?usp=sf_link" class="nav-item nav-link">Contact Us</a> 
+                        <!-- <a href="service.html" class="nav-item nav-link">Service</a>
                         <a href="price.html" class="nav-item nav-link">Pricing</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -94,7 +122,7 @@
                                 <a href="search.html" class="dropdown-item">Search</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>  -->
                     </div>
                 </div>
             </nav>
@@ -104,7 +132,7 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header col-md-8">
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header col-md-10">
         <div class="container ">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
@@ -195,26 +223,46 @@
        
     </div>
     <h4 class="text-center mb-3"> Key Features</h4>
-   
-      
-            <ul>
-            <li class="text-primary col-md-6">Patient registration & Old patient search.</li>  
-            <li class="text-primary">Patient Billing </li>
-            <li class="text-primary">User friendly screen</li>
-            <li class="text-primary"> Outdoor-patient management</li>
-            <li class="text-primary"> Indoor-patient management</li>
-            <li class="text-primary"> Ward Nursing management</li>  
-            <li class="text-primary"> Pathology Report With Lis</li>
-            <li class="text-primary"> Radiology Report With Pacs and Dicom</li>
-            <li class="text-primary"> Pharmacy management</li>
-            <li class="text-primary"> TPA Billing / Empanelment management.</li>
-            <li class="text-primary">Blood Bank</li>
-            <li class="text-primary">Mis Report</li>
-            <li class="text-primary">Sms and Email Report</li>
-        </ul>
-          
+    <div class="bullet-container">
+     
+        <div class="bullet-column">
+            <ul class="bullet-list">
+                <li class="text-primary">Patient Registration and Demographics</li> 
+                <li class="text-primary"> Dashboard and Analytics</li>               
+                <li class="text-primary">Appointment Scheduling </li>
+                <li class="text-primary">Electronic Health Records (EHR)</li>
+                <li class="text-primary">Billing and Invoicing</li>   
+                <li class="text-primary">Patient Portal and Engagement  </li>             
+                <li class="text-primary"> Outdoor-patient management</li>
+                
+
+            </ul>
         </div>
-       
+
+        <div class="bullet-column">
+            <ul class="bullet-list">
+                <li class="text-primary"> Indoor-patient management</li>
+                <li class="text-primary"> Ward Nursing management</li>  
+                <li class="text-primary"> Laboratory and Diagnostic Integration with Machine</li>
+                <li class="text-primary"> Radiology Report With Pacs and Dicom</li>
+                <li class="text-primary"> Pharmacy management</li>
+                <li class="text-primary"> TPA Billing / Empanelment management.</li>
+                <li class="text-primary">Invetory  Management</li>
+                
+            </ul>
+        </div>
+        <div class="bullet-column">
+            <ul class="bullet-list">
+                <li class="text-primary">Mobile Accessibility</li>
+                <li class="text-primary">Multi-Location Support</li> 
+                <li class="text-primary">Integrated Billing and Payment Gateway</li>                 
+                <li class="text-primary">Reporting and Analytics</li>
+                <li class="text-primary">Sms and Email Report</li>
+                <li class="text-primary">Lab Machine Interface With Lis</li>
+                
+            </ul>
+        </div>
+    </div>
         
       
     <!-- About End -->
@@ -565,7 +613,7 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/architech.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="img/randox.jpg" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
@@ -603,7 +651,7 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/mindray.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="img/access2.jpg" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
@@ -792,7 +840,11 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                          <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                          <a class="text-light mb-2" href="https://docs.google.com/forms/d/e/1FAIpQLSdCex8t93PGQOcF6gXvA0n4D50YLbzQ4CxTCo4v4qpWTJP8hQ/viewform?usp=sf_link"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+             
+                       
                         <!-- <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
@@ -803,12 +855,16 @@
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Popular Links</h4>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <!-- <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                          <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                          <a class="text-light mb-2" href="https://docs.google.com/forms/d/e/1FAIpQLSdCex8t93PGQOcF6gXvA0n4D50YLbzQ4CxTCo4v4qpWTJP8hQ/viewform?usp=sf_link"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+             
+                        <!-- <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a> -->
+                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>  -->
+                    
+                    
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
