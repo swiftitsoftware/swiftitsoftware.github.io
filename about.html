@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Swift It Software</title>
+    <title>Swift IT Software</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -33,6 +33,177 @@
         max-width: 69px;
         height: auto;
       }
+
+      body {
+          background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
+          color: #1d2a4d;
+      }
+
+      .topbar-link {
+          color: #1d2a4d;
+          font-weight: 600;
+      }
+
+      .about-hero {
+          background: linear-gradient(120deg, rgba(18, 29, 57, 0.94), rgba(24, 61, 122, 0.82)), url('img/hero1.jpg') center center / cover no-repeat;
+          padding: 90px 0 70px;
+      }
+
+      .about-hero h1 {
+          color: #fff;
+          font-size: clamp(2.2rem, 4vw, 4rem);
+          font-weight: 700;
+          margin-bottom: 18px;
+      }
+
+      .about-hero p {
+          color: rgba(255,255,255,0.85);
+          max-width: 760px;
+          font-size: 1.08rem;
+          line-height: 1.8;
+          margin: 0 auto;
+      }
+
+      .about-block {
+          padding: 80px 0;
+      }
+
+      .about-panel {
+          background: rgba(255,255,255,0.9);
+          border: 1px solid rgba(29,42,77,0.08);
+          border-radius: 24px;
+          box-shadow: 0 16px 38px rgba(17, 28, 52, 0.08);
+          padding: 36px;
+      }
+
+      .section-tag {
+          display: inline-block;
+          background: #eaf2ff;
+          color: #2d5b9b;
+          font-size: 0.8rem;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          padding: 8px 14px;
+          border-radius: 999px;
+          font-weight: 700;
+          margin-bottom: 16px;
+      }
+
+      .about-panel h2 {
+          color: #1d2a4d;
+          font-weight: 700;
+          margin-bottom: 20px;
+      }
+
+      .about-panel p,
+      .about-panel li {
+          color: #47566d;
+          font-size: 1.03rem;
+          line-height: 1.8;
+      }
+
+      .expertise-grid {
+          margin-top: 24px;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 24px;
+      }
+
+      .expertise-item {
+          background: linear-gradient(180deg, #ffffff, #f4f8ff);
+          border: 1px solid rgba(29,42,77,0.06);
+          border-radius: 18px;
+          padding: 24px 22px;
+      }
+
+      .expertise-item i {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 58px;
+          height: 58px;
+          border-radius: 16px;
+          background: linear-gradient(135deg, #2d5b9b, #1d2a4d);
+          color: #fff;
+          font-size: 1.5rem;
+          margin-bottom: 16px;
+      }
+
+      .expertise-item h4 {
+          color: #1d2a4d;
+          font-weight: 700;
+          margin-bottom: 10px;
+      }
+
+      .why-us {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 18px;
+          margin-top: 24px;
+      }
+
+      .why-us .item {
+          background: #f5f8ff;
+          border-radius: 18px;
+          padding: 24px 18px;
+          border: 1px solid rgba(29,42,77,0.05);
+          text-align: center;
+      }
+
+      .why-us .item i {
+          color: #2d5b9b;
+          font-size: 2rem;
+          margin-bottom: 14px;
+      }
+
+      .why-us .item h5 {
+          color: #1d2a4d;
+          font-weight: 700;
+          margin-bottom: 8px;
+      }
+
+      .why-us .item p {
+          margin: 0;
+          font-size: 0.96rem;
+          line-height: 1.6;
+      }
+
+      .cta-box {
+          background: linear-gradient(135deg, #143a70 0%, #1d2a4d 100%);
+          border-radius: 26px;
+          padding: 36px 32px;
+          margin-top: 40px;
+          color: #fff;
+          box-shadow: 0 18px 36px rgba(17, 28, 52, 0.18);
+      }
+
+      .cta-box h3 {
+          font-weight: 700;
+          margin-bottom: 8px;
+      }
+
+      .cta-box p {
+          color: rgba(255,255,255,0.8);
+          margin-bottom: 0;
+      }
+
+      @media (max-width: 991.98px) {
+          .expertise-grid,
+          .why-us {
+              grid-template-columns: 1fr 1fr;
+          }
+      }
+
+      @media (max-width: 767.98px) {
+          .expertise-grid,
+          .why-us {
+              grid-template-columns: 1fr;
+          }
+
+          .about-panel {
+              padding: 24px 20px;
+          }
+      }
     </style>
 </head>
 
@@ -43,26 +214,26 @@
             <div class="row">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary pe-3" href=""><i class="bi bi-telephone me-2"></i>+91-9667182539</a>
+                        <a class="topbar-link pe-3" href="tel:+919667182539"><i class="bi bi-telephone me-2"></i>+91-9667182539</a>
                         <span class="text-body">|</span>
-                        <a class="text-primary px-3" href=""><i class="bi bi-envelope me-2"></i>Swiftitsoftware@gmail.com</a>
+                        <a class="topbar-link px-3" href="mailto:Swiftitsoftware@gmail.com"><i class="bi bi-envelope me-2"></i>Swiftitsoftware@gmail.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-body px-2" href="">
+                        <a class="text-body px-2" href="tel:+919667182539">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a class="text-body px-2" href="">
+                        <a class="text-body px-2" href="tel:+919667182539">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a class="text-body px-2" href="">
+                        <a class="text-body px-2" href="tel:+919667182539">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a class="text-body px-2" href="">
+                        <a class="text-body px-2" href="tel:+919667182539">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a class="text-body ps-2" href="">
+                        <a class="text-body ps-2" href="tel:+919667182539">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -87,22 +258,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                       <a href="index.html" class="nav-item nav-link ">Home</a>
-                      <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCex8t93PGQOcF6gXvA0n4D50YLbzQ4CxTCo4v4qpWTJP8hQ/viewform?usp=sf_link" target="_blank" class="nav-item nav-link">Contact Us</a> 
-                        <!-- <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Pricing</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                                <a href="team.html" class="dropdown-item">The Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="appointment.html" class="dropdown-item">Appointment</a>
-                                <a href="search.html" class="dropdown-item">Search</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>  -->
+                      <a href="about.html" class="nav-item nav-link active">About Us</a>
+                      <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -112,71 +269,80 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid about-hero">
+        <div class="container text-center">
+            <div class="section-tag">About Us</div>
+            <h1>Building smarter healthcare and digital systems</h1>
+            <p>At Swift IT Software, we specialize in transforming healthcare operations through intelligent hospital management systems, laboratory workflow automation, lab machine integration, and custom software solutions designed for business growth.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid about-block">
         <div class="container">
-            <div class="row gx-12">
-                <!-- <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/about.jpg" style="object-fit: cover;">
+            <div class="about-panel">
+                <div class="section-tag">Our Story</div>
+                <h2>Technology that supports better patient care and smoother operations</h2>
+                <p>Swift IT Software was founded with a clear mission: to simplify complex healthcare processes through dependable, modern technology. We support hospitals, diagnostic centers, and enterprises with software that improves efficiency, maintains compliance, and enhances service delivery.</p>
+                <p>From registration and billing to lab reporting and multi-location data management, our solutions are built to automate repetitive tasks and reduce operational friction, allowing teams to focus on what matters most â€” patient care and business performance.</p>
+
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <i class="fa fa-hospital"></i>
+                        <h4>Hospital Software Solutions</h4>
+                        <p>Powerful HMS platforms that streamline OPD/IPD workflows, billing, pharmacy, ward management, and complete hospital administration.</p>
                     </div>
-                </div> -->
-                <div class="col-lg-12">
-                    <!-- <div class="mb-4">
-                        <h5 class="text-center d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                        
-                    </div> -->
-                 
-                    <h1 class="text-center">About Swift IT Software</h1>
-                    <p>At Swift IT Software, we are on a mission to transform the healthcare industry through innovative software solutions and cutting-edge technology. Our focus areas include hospital management, laboratory automation, lab machine interface, and web development services.</p>
-                
-                    <h2 class="text-center">Our Expertise</h2>
-                    <p><strong>Hospital Software Solutions:</strong> Our advanced hospital management software simplifies healthcare administration, from patient registration to billing and comprehensive records.</p>
-                    <p><strong>Laboratory Excellence:</strong> Our Laboratory Information Systems optimize lab workflows, integrating seamlessly with diagnostic equipment for accurate results.</p>
-                    <p><strong>Lab Machine Interface:</strong> Our solutions facilitate real-time communication between lab machines and software systems, streamlining data processing.</p>
-                    <p><strong>Web Development Services:</strong> We create custom websites that engage patients and facilitate seamless communication for healthcare institutions.</p>
-                
-                    <h2 class="text-center">Why Choose Us?</h2>
-                    <ul>
-                      <li><strong>Innovation:</strong> We stay ahead of the curve by integrating the latest technological advancements.</li>
-                      <li><strong>Customization:</strong> Our solutions are tailored to fit the unique needs of each client.</li>
-                      <li><strong>Security:</strong> Patient data security is paramount; we adhere to stringent security protocols.</li>
-                      <li><strong>Collaboration:</strong> We build lasting partnerships with clients, offering personalized solutions and ongoing support.</li>
-                    </ul>
-                
-                    <h2 class="text-center">Join Us in Transforming Healthcare</h2>
-                    <p>Together, let's redefine healthcare management, empower laboratories, and create digital solutions that meet the evolving needs of the industry.</p>
-                    <!-- <div class="row g-3 pt-3">
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
-                                <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
-                            </div>
+                    <div class="expertise-item">
+                        <i class="fa fa-microscope"></i>
+                        <h4>Laboratory Excellence</h4>
+                        <p>Integrated LIS systems designed to improve sample tracking, result management, reporting, and laboratory productivity.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <i class="fa fa-cogs"></i>
+                        <h4>Lab Machine Interface</h4>
+                        <p>Real-time connectivity between diagnostic machines and software systems for faster, more accurate, and more reliable reporting.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <i class="fa fa-code"></i>
+                        <h4>Web Development Services</h4>
+                        <p>Custom websites and business applications that help healthcare institutions communicate better and operate more efficiently.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 48px;">
+                    <div class="section-tag">Why Choose Us</div>
+                    <h2>Built around trust, innovation, and measurable outcomes</h2>
+                    <div class="why-us">
+                        <div class="item">
+                            <i class="fa fa-lightbulb"></i>
+                            <h5>Innovation</h5>
+                            <p>We utilize the latest technologies to create future-ready digital systems.</p>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
-                                <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
-                            </div>
+                        <div class="item">
+                            <i class="fa fa-sliders-h"></i>
+                            <h5>Customization</h5>
+                            <p>Every solution is tailored to meet unique workflows, processes, and business goals.</p>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
-                                <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
-                            </div>
+                        <div class="item">
+                            <i class="fa fa-shield-alt"></i>
+                            <h5>Security</h5>
+                            <p>Data protection and compliance are at the center of everything we build.</p>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                                <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
-                            </div>
+                        <div class="item">
+                            <i class="fa fa-handshake"></i>
+                            <h5>Partnership</h5>
+                            <p>We work closely with clients for long-term support, optimization, and growth.</p>
                         </div>
-                    </div> -->
+                    </div>
+                </div>
+
+                <div class="cta-box">
+                    <h3>Letâ€™s redefine what healthcare technology can do.</h3>
+                    <p>Whether you are improving hospital operations, automating lab workflows, or building a digital platform for growth, Swift IT Software is ready to help.</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-
 
     <!-- Search Start --> -->
     <!-- <div class="container-fluid bg-primary my-5 py-5">
@@ -273,6 +439,8 @@
     </div> -->
     <!-- Team End
 
+
+    <a class="floating-demo" href="https://docs.google.com/forms/d/e/1FAIpQLSdCex8t93PGQOcF6gXvA0n4D50YLbzQ4CxTCo4v4qpWTJP8hQ/viewform?usp=sf_link" target="_blank">Book a Demo</a>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 py-5">
